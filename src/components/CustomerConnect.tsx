@@ -51,7 +51,6 @@ const CustomerConnect = () => {
           },
         });
 
-        // Clean up the chart when the component is unmounted
         return () => {
           myChart.destroy();
         };
@@ -128,7 +127,6 @@ const CustomerConnect = () => {
           </div>
 
           <LinkOrButton
-            variant="secondary"
             isFull={false}
             className="text-white py-3 px-10 rounded-full mt-7"
           >
