@@ -8,9 +8,28 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImages: {},
+
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          50: "#0A2640",
+          100: "#65E4A3",
+          200: "#0DBBFC",
+        },
+        secondary: {
+          50: "#8FB6D5",
+          100: "#777777",
+          200: "#1C3D5B",
+          300: "#95ABBC",
+        },
+      },
+
+      fontFamily: {
+        primary: ["var(--font-manrope)", "san-serif"],
+      },
+
+      borderRadius: {
+        hero: "0% 100% 0% 100% / 46% 0% 100% 54%",
       },
     },
   },
