@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import clsx from "clsx";
-import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -70,7 +69,6 @@ export default function RootLayout({
           "flex flex-col min-h-screen"
         )}
       >
-        <NextTopLoader color="#65E4A3" />
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>
