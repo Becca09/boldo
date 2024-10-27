@@ -31,6 +31,7 @@ function OurServices() {
             Handshake infographic mass market <br /> crowdfunding iteration.
           </h3>
         </div>
+        
 
         <div className="flex lg:flex-row flex-col justify-center items-center lg:gap-60 gap-10 mt-10">
           {features.map((feature, index) => (
