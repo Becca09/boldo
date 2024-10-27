@@ -9,12 +9,12 @@ import clsx from "clsx";
 //   outline: "bg-transparent border border-primary-100 text-primary-100",
 // };
 
-const sizes = {
-  xs: "py-2 px-3 md:px-4 xl:px-5 text-[13px]",
-  sm: "py-2 px-4 md:px-6 text-sm",
-  md: "py-2 px-6 md:px-10 text-[15px]",
-  lg: "py-3 px-8 lg:px-12 text-lg",
-};
+// const sizes = {
+//   xs: "py-2 px-3 md:px-4 xl:px-5 text-[13px]",
+//   sm: "py-2 px-4 md:px-6 text-sm",
+//   md: "py-2 px-6 md:px-10 text-[15px]",
+//   lg: "py-3 px-8 lg:px-12 text-lg",
+// };
 
 type IconProps =
   | { startIcon: React.ReactElement; endIcon?: React.ReactElement }
@@ -24,7 +24,7 @@ type IconProps =
 export type LinkOrButtonProps = {
   type?: "button" | "submit" | "reset";
   // variant?: keyof typeof variants;
-  size?: keyof typeof sizes;
+  // size?: keyof typeof sizes;
   isLoading?: boolean;
   isDisable?: boolean;
   isFull?: boolean;
@@ -39,7 +39,7 @@ export const LinkOrButton: React.FC<LinkOrButtonProps> = ({
   href = "",
   className = "",
   // variant = "primary",
-  size = "md",
+  // size = "md",
   onClick,
   isFull = true,
   isDisable = false,
