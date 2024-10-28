@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { LinkOrButton } from "./LinkOrButton";
 import Container from "./Container";
 
 const Blog = () => {
