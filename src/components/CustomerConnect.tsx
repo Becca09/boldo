@@ -10,6 +10,7 @@ import {
   Legend,
   DoughnutController,
 } from "chart.js";
+import Container from "./Container";
 
 Chart.register(ArcElement, Tooltip, Legend, DoughnutController);
 
@@ -58,8 +59,8 @@ const CustomerConnect = () => {
     }
   }, []);
   return (
-    <>
-      <div className="lg:p-20 lg:mx-14 p-14 mt-20 flex lg:flex-row flex-col lg:justify-between gap-10">
+    <Container maxWidth={"xl"}>
+      <div className="lg:p-10 p-4 mt-20 flex lg:flex-row flex-col lg:justify-between gap-10">
         <div className="lg:relative">
           <div className="hidden lg:block">
             <Image
@@ -135,7 +136,7 @@ const CustomerConnect = () => {
         </div>
       </div>
 
-      <div className="lg:p-20 lg:mx-14 p-14 mt-20 flex lg:flex-row flex-col lg:justify-between gap-10">
+      <div className="lg:p-10 p-4 p-14 mt-20 flex lg:flex-row flex-col lg:justify-between gap-10">
         <div className="lg:w-[500px] lg:mt-24 hidden lg:block">
           <h3 className="text-4xl">
             We connect our customers with the best, and help them keep up-and
@@ -186,11 +187,11 @@ const CustomerConnect = () => {
               height={500}
             />
           </div>
-          <div className="lg:absolute lg:bottom-[-280px] lg:left-[70px] transform -translate-y-1/2 bg-white shadow-lg lg:w-[300px] p-10 lg:mt-0 mt-20">
+          <div className="lg:absolute lg:bottom-[-230px] lg:left-[70px] transform -translate-y-1/2 bg-white shadow-lg lg:w-[300px] p-10 lg:mt-0 mt-20">
             <div className="">
               <canvas ref={chartRef} width={190} height={190} />
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 lg:mt-0 mt-5">
               <div className="flex flex-row items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-secondary-50"></div>
                 <p>30% - </p>
@@ -212,7 +213,7 @@ const CustomerConnect = () => {
           </div>
         </div>
       </div>
-    </>
+    </Container>
   );
 };
 
